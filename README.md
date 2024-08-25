@@ -21,21 +21,22 @@ This project is a streamlined Next.js-based website for a personal consulting bu
 ## Project Structure
 consulting-website/
 ├── app/
-│   ├── page.js
-│   ├── layout.js
+│   ├── globals.css
+│   ├── page.tsx
+│   ├── layout.tsx
 │   └── services/
-│       └── page.js
+│       └── page.tsx
 ├── components/
 ├── styles/
 ├── public/
 │   └── images/
 └── package.json
-Copy
+
 ## Getting Started
 
 1. Clone the repository:
-git clone [repository-url]
-Copy
+git clone https://github.com/enterprisealchemist/consultingservices
+
 2. Install dependencies:
 cd consulting-website
 npm install
@@ -43,7 +44,7 @@ Copy
 3. Run the development server:
 npm run dev
 Copy
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+4. Open [http://localhost:3000] in your browser to see the result.
 
 ## Deployment
 This project is designed to be deployed on Vercel or a similar platform that supports Next.js applications.
@@ -54,7 +55,7 @@ This is a personal project, but suggestions and feedback are welcome. Please ope
 ## License
 MIT License
 
-Copyright (c) 2024 [Your Name]
+Copyright (c) 2024 Vittorio Iaquinta
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
