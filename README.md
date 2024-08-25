@@ -19,7 +19,7 @@ This project is a streamlined Next.js-based website for a personal consulting bu
   * Call to action (calendar booking link)
 
 ## Project Structure
-consulting-website/
+consultinservices/
 ├── app/
 │   ├── globals.css
 │   ├── page.tsx
