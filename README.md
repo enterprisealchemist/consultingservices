@@ -18,20 +18,6 @@ This project is a streamlined Next.js-based website for a personal consulting bu
   * Case study/portfolio section
   * Call to action (calendar booking link)
 
-## Project Structure
-consultinservices/
-├── app/
-│   ├── globals.css
-│   ├── page.tsx
-│   ├── layout.tsx
-│   └── services/
-│       └── page.tsx
-├── components/
-├── styles/
-├── public/
-│   └── images/
-└── package.json
-
 ## Getting Started
 
 1. Clone the repository:
