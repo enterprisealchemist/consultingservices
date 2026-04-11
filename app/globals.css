@@ -3,28 +3,33 @@
 @tailwind utilities;
 
 :root {
-  --color-gold: 230, 192, 104;
-  --color-night: 15, 15, 15;
-  --color-coyote: 124, 99, 84;
-  --color-ghost-white: 232, 235, 247;
+  --gradient-gold: linear-gradient(135deg, #B8963E 0%, #E6C068 40%, #F0D68A 100%);
+  --gradient-gold-subtle: linear-gradient(135deg, rgba(230,192,104,0.15) 0%, rgba(230,192,104,0.05) 100%);
+}
 
-  --foreground-rgb: var(--color-night);
-  --background-start-rgb: 200, 200, 200; /* Lighter start color */
-  --background-end-rgb: 240, 240, 240; /* Darker end color */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-    to bottom,
-    rgb(var(--background-start-rgb)),
-    rgb(var(--background-end-rgb))
-  );
-  min-height: 100vh; /* Ensure the gradient covers the full viewport height */
+  background-color: #0A0A0F;
+  color: #F5F5F7;
+  min-height: 100vh;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Noise grain overlay for analog warmth */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url('/noise.svg');
+  background-repeat: repeat;
+  mix-blend-mode: overlay;
+}
+
+::selection {
+  background: rgba(230, 192, 104, 0.3);
 }
